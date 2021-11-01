@@ -1,0 +1,34 @@
+.promo {    
+    background-color:#F1E4E6 ;
+    &-wrap {
+        height: 765px;
+        background-image: url(../img/men_promo.png);
+        background-repeat: no-repeat; 
+        background-position-x: -225px;
+        background-position-y: bottom;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &-text {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 40px;
+            color: $black-color;
+            border-left: 12px solid $main-color;
+            padding-left: 16px;
+            margin: right 90px; ;
+            }
+    
+    }
+   
+}
+.text-min {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;    
+    color: $black-color;
+    
+}
+.text-pink {
+    color: $main-color;
+}

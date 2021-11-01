@@ -1,0 +1,32 @@
+.features {
+    background-color: $black-color;
+    color:$white-text-color;
+    padding: 103px 0;
+    &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-item {
+        width: 360px;
+        height: 133px;    
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-name{
+        font-size: 19.96px;
+        line-height: 24px;
+        color: $white-text-color;
+        padding: 16px;
+        &-description {
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            text-align: center;
+            color: $white-text-color;
+        }
+    }
+    
+}

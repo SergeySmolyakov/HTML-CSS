@@ -1,0 +1,118 @@
+    .slider {
+        background-color: #F7F7F7;    
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: $shift;
+        &-btn {
+            background: rgba(42, 42, 42, 0.15);
+            padding: 24px;
+            border: none;
+            &:hover {
+               color: $main-color;
+            }
+            
+        }
+
+        
+    }
+    .about {
+        
+                
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin-bottom: 128px;
+        text-align: center;
+        &-wrap {
+            border: #EAEAEA solid 1px;
+            background-color: $white-text-color
+            ;
+            margin-top: -$shift;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            text-align: center;
+            
+            
+        }
+        
+    }
+    .header-about {
+        color: $main-color;
+        font-size: 14px;
+        line-height: 17px;
+        border-bottom: $main-color solid 3px; 
+        padding-top: 65px;
+        padding-bottom: 12px;
+          
+                        
+    }
+    .text-about {
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        padding-top: 12px;
+        padding-bottom: 48px;        
+        &-about-in {
+            font-size: 14px;
+            line-height: 17px;            
+            color: #5E5E5E;
+            text-align: center;
+            
+        }
+    }
+    .text-about-wrap {
+        width: 642px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        border-bottom: solid 1px #EAEAEA;
+    }
+    .price-about {
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+        padding-top: 33px;
+        padding-bottom: 65px;
+        
+        
+    }
+    .sorter-about {
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        display:flex;
+        align-items: center; 
+        justify-content: center;
+        padding-top: 65px;
+        padding-bottom: 48px;       
+    }
+    .sorter-about .fa-chevron-down {
+        padding-left: 9px;
+    }
+    .button-about {
+        margin-bottom: 65px;
+    }
+    .button-add {
+    padding: 10px 20px;
+    border: 1px solid $main-color ;
+    background-color: $white-text-color;
+    color: $main-color;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;   
+        
+    }
+    .about-icon-basket {
+        fill: $main-color;
+        padding-top: 12px;
+        padding-right: 12px;
+    }
+    
+    

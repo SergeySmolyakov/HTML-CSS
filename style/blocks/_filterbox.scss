@@ -1,0 +1,39 @@
+.filter-wrap {
+    display: flex;
+    display:flex;
+    align-items: center; 
+    justify-content: space-between;
+ 
+    padding-top: 50px;
+    padding-bottom: 85px;
+} 
+  .filter-box {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    }    
+
+.filter-box {
+padding-left: 30px;
+&-h2 {
+    font-size: 17px;
+    }
+}
+.sorter {
+    font-size: 14px;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+    padding-right: 410px;
+    &-size {
+       padding-left: 30px;
+       padding-right: 30px;
+   }
+    
+   }
+   .sorter .fa-chevron-down {
+       padding-left: 10px;
+   }
+   .img-filter {
+    height: 17px;
+}

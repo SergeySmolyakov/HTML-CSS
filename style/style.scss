@@ -1,0 +1,39 @@
+@import "_var.scss";
+@import "_mixins.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: 'Lato', sans-serif;    
+}
+.wrap {
+    margin: 0 auto;
+    width: $desktop-wrap;    
+}
+.main {
+    flex-grow: 1;
+}
+@import "blocks/header";
+@import "blocks/promo";
+@import"blocks/innerblock";
+@import"blocks/filterbox";
+@import "blocks/categories";
+@import "blocks/product";
+@import "blocks/features";
+@import"blocks/pagination";
+@import"blocks/feedback";
+@import"blocks/subscribe";
+@import"blocks/footer";
+@import"blocks/slider";
+.hidden {
+  width: 1px;  
+  height: 1px;
+  position: absolute;
+  left: -99999px;
+  margin: -1px;
+
+}
+

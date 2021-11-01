@@ -1,0 +1,75 @@
+.header {
+    background-color: $black-color;
+    color: $white-text-color;   
+    padding: 18px 0;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }      
+    &_menu {
+        display: flex;
+        justify-content: space-between;    
+        align-items: center;
+    }      
+    &-left {
+        display: flex;
+        align-items: center;    
+    }
+    &-right {
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+    }
+    &-icon-search {
+        fill: $white-text-color;
+    }
+    &-icon-menu {
+        fill: $white-text-color;        
+    }
+    &-icon-lk {
+        fill: $white-text-color;
+    }
+    &-icon-basket {
+        fill: $white-text-color ;
+    }
+} 
+.menu {
+    background-color: transparent;
+    border: none;
+    &:hover .header-icon-menu {
+        fill: $main-color;
+    }
+}
+.logo-menu {
+    text-decoration: none;
+    color: transparent;
+    margin-right: 41px;
+}
+.search-menu {
+background-color: transparent;
+border: none;
+}
+
+.search-menu:hover .header-icon-search {
+    fill: $main-color;
+}
+.lk {
+    margin: 0 33px;
+    text-decoration: none;
+    color: $white-text-color;
+    &:hover .header-icon-lk {
+        fill: $main-color;
+    }
+}
+.basket {
+    text-decoration: none;
+    color: $white-text-color;
+    &:hover .header-icon-basket {
+        fill: $main-color;
+    }
+
+}

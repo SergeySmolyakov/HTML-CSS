@@ -1,0 +1,80 @@
+.products {
+    background-color: $white-text-color;
+    &-title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 36px;        
+        color: $black-color;  
+    }
+    &-description {
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        padding-top: 6px;
+    }
+    &-item {
+        background-color: #f8f8f8; 
+        width: $desktop-wrap / 3 - 20px;
+        padding-bottom: 10px;
+        position: relative;
+        transition: 1s;
+     }
+     &-list {
+        padding-top: 30px;
+        padding-left: 0px;
+        margin-bottom: 45px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &-name {
+        font-size: 13px;
+        line-height: 16px;
+        color: $black-color;
+        padding-top: 25px;
+        margin-left: 18px;    
+    }
+    &-text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;    
+        color: #5D5D5D;
+        padding-top: 12px;
+        margin-left: 18px;
+    }
+    &-price {
+
+        font-size: 16px;
+        line-height: 19px;
+        color: $main-color;
+        padding-top: 18px;
+        margin-left: 18px;
+       }
+
+}
+.video-products {
+    object-fit: cover;
+}
+.center {
+    text-align: center;
+    margin-bottom: 96px;        
+}
+.button {    
+    padding: 10px 20px;
+    border: 1px solid $main-color ;
+    background-color: $white-text-color;
+    color: $main-color;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    &:hover {
+        background-color: $main-color;
+        color: $white-text-color;  
+    }
+}
+.button .fa-chevron-right {
+    margin-left: 15px;
+}
