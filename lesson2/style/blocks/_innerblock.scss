@@ -1,0 +1,45 @@
+.inner-text {
+    background-color: #F8F3F4;
+    color: $main-color;
+    font-size: 24;    
+    line-height: 29px;
+    padding: 65px 0;
+    margin-bottom: 50px;
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+    
+    }
+    
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: $black-color;
+    content: "/\00a0";
+  }
+  
+  
+  ul.breadcrumb li a {
+    color: #636363;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  
+ 
+  ul.breadcrumb li a:hover {
+    color: $main-color;
+    text-decoration: none;
+  }
+ 
+  
+

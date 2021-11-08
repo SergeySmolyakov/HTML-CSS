@@ -1,0 +1,25 @@
+.feedback {
+    background-color: #f4f4f4;
+    background-image: url("../img/subscribe_bg.png");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 95px;
+    padding-bottom: 153px;
+    &-wrap {
+        display: flex;  
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+}
+.reviews {
+  width: 360px;
+  text-align: center;
+  &-name {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: $black-color;
+      padding-top: 45px;
+  }
+}
