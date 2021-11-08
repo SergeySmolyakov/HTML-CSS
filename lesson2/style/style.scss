@@ -13,6 +13,11 @@ body {
     margin: 0 auto;
     width: $desktop-wrap;    
 }
+@media (max-width:1180px) {
+    .wrap {
+        width: $desktop-wrap - 405px;
+    }
+}
 .main {
     flex-grow: 1;
 }

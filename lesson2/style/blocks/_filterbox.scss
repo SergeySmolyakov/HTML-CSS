@@ -1,30 +1,65 @@
 .filter-wrap {
     display: flex;
-    display:flex;
+    width: 360px;
     align-items: center; 
-    justify-content: space-between;
- 
-    padding-top: 50px;
-    padding-bottom: 85px;
+    
 } 
   .filter-box {
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    }    
+    display: flex;
+    gap: 30px;    
+    position: relative;
+    width: 960px;
+       
 
-.filter-box {
-padding-left: 30px;
-&-h2 {
-    font-size: 14px;
+
+   &-h2 {
+    font-size:14px;
+    font-weight: 600;
+    line-height: 17px;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 13px 16px; 
+    background-color: $white-text-color;   
+
     }
 }
+::-webkit-details-marker {display: none;} 
+.filter-box[open] .filter-box-h2 {
+    color: $main-color;    
+    z-index: 20;
+    position: relative;
+}
+.filter-box[open] .img-filter {
+    fill: $main-color;
+    
+}
+.filter-drop {
+    position: absolute;
+    z-index: 10;
+    width: 360px;
+    background-color: $white-text-color;
+    padding: 0px 15px 15px 15px;
+    box-shadow: $shadow;   
+    
+}
+.filter-box[open] {
+    box-shadow: $shadow;
+}
+
 .sorter {
     font-size: 14px;
     display:flex;
     align-items: center; 
     justify-content: center;
-    padding-right: 410px;
+    &-about {
+        text-align: left;
+    }
+    
     &-size {
        padding-left: 30px;
        padding-right: 30px;
@@ -35,5 +70,134 @@ padding-left: 30px;
        padding-left: 10px;
    }
    .img-filter {
-    height: 17px;
+    height: 14px;
 }
+.sorter-trending {
+    display: block;
+    font-size:14px;
+    font-weight: 600;
+    line-height: 17px;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 13px 16px; 
+    background-color: $white-text-color;
+}
+::-webkit-details-marker {display: none;} 
+.sorter-size {
+    display: block;
+    font-size:14px;
+    font-weight: 600;
+    line-height: 17px;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 13px 16px; 
+    background-color: $white-text-color;
+}
+::-webkit-details-marker {display: none;} 
+.sorter-price {
+    display: block;
+    font-size:14px;
+    font-weight: 600;
+    line-height: 17px;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 13px 16px; 
+    background-color: $white-text-color;
+}
+::-webkit-details-marker {display: none;} 
+.sorter-wrap {
+    display: flex;
+    align-items:center;   
+    }
+.sort-drop {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;    
+    position: absolute;
+    z-index: 10;
+    width: 165px;
+    background-color: $white-text-color;
+    padding: 0px 15px 15px 15px;
+    box-shadow: $shadow;
+    &-about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;    
+    position: absolute;
+    z-index: 10;
+    width: 162px;
+    background-color: $white-text-color;
+    padding: 0px 15px 15px 15px;
+    box-shadow: $shadow;
+    }   
+} 
+.sort-drop-size {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;    
+    position: absolute;
+    z-index: 10;
+    width: 82.5px;
+    background-color: $white-text-color;
+    padding: 0px 5px 5px 5px;
+    box-shadow: $shadow;
+    &-about {
+        display: flex;
+    flex-direction: column;
+    padding-top: 10px;    
+    position: absolute;
+    z-index: 10;
+    width: 143px;
+    background-color: $white-text-color;
+    padding: 0px 15px 15px 15px;
+    box-shadow: $shadow;
+    }   
+}
+.sort-drop-price {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;    
+    position: absolute;
+    z-index: 10;
+    width: 95px;
+    background-color: $white-text-color;
+    padding: 0px 15px 15px 15px;
+    box-shadow: $shadow;
+    &-about {
+        display: flex;
+    flex-direction: column;
+    padding-top: 10px;    
+    position: absolute;
+    z-index: 10;
+    width: 125px;
+    background-color: $white-text-color;
+    padding: 0px 15px 15px 15px;
+    box-shadow: $shadow;
+    }
+}
+.sorter[open] .sorter-trending {
+    color: $main-color;    
+    z-index: 20;
+    position: relative;
+}
+.sorter[open] .sorter-size {
+    color: $main-color;    
+    z-index: 30;
+    position: relative;
+}
+.sorter[open] .sorter-price {
+    color: $main-color;    
+    z-index: 40;
+    position: relative;
+}
+.sorter[open] {
+    box-shadow: $shadow;
+}
+
+ 
