@@ -9,12 +9,24 @@
         display: flex;  
         justify-content: space-between;
         align-items: flex-end;
+
+        @media (max-width:$tablet-breakpoint){
+          display: block;
+          margin: 0 auto;
+        }
+        
       }
 
 }
 .reviews {
   width: 360px;
   text-align: center;
+
+  @media (max-width:$tablet-breakpoint){
+    width: auto;
+    padding-bottom: 48px;
+  }
+
   &-name {
       font-size: 20px;
       line-height: 24px;

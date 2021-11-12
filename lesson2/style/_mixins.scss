@@ -2,3 +2,13 @@
     width: $width;
     height: $height;
 }
+
+@mixin size-cart-tablet ($width:228px , $height:168px) {
+    width: $width;
+    height: $height;
+}
+@mixin size-cart-mobile ($width:343px , $height:247px) {
+    width: $width;
+    height: $height;
+}
+    

@@ -4,18 +4,33 @@
     font-size: 24;    
     line-height: 29px;
     padding: 65px 0;
+
+    
+    
+    
     &-wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width:$mobile-breakpoint) {
+          display: block;
+          text-align: center;
         }
+      }      
+    } 
     
+    .inner-header {
+      @media (max-width:$mobile-breakpoint) {
+        padding-bottom: 32px;
+      }
     }
-    
+   
 
 ul.breadcrumb li {
     display: inline;
-    font-size: 18px;
+    font-size: 18px;  
+
   }
   
   
@@ -40,5 +55,5 @@ ul.breadcrumb li {
     text-decoration: none;
   }
  
-  
+      
 

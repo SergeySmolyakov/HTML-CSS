@@ -14,6 +14,14 @@
             }
             
         }
+        &-img {
+            @media (max-width:$mobile-breakpoint){
+            height: 365px;
+            background-position: 0 0;
+            background-size: contain;
+            width: 265px;
+            }
+        }
 
         
     }
@@ -36,6 +44,17 @@
             justify-content: center;
             align-items:center;
             text-align: center;
+
+            @media (max-width:$tablet-breakpoint) {
+                margin-top: 0px;
+                border: none;
+            }
+
+            @media (max-width:$mobile-breakpoint) {
+                margin-top: 0px;
+                border: none;
+            }
+
             
             
         }
@@ -73,6 +92,10 @@
         align-items:center;
         text-align: center;
         border-bottom: solid 1px #EAEAEA;
+
+        @media (max-width:$mobile-breakpoint){
+            width: 326px;
+        }
     }
     .price-about {
         font-size: 24px;
@@ -83,7 +106,7 @@
         
         
     }
-    .sorter-about {
+    .sorter-about-product {
         font-size: 14px;
         line-height: 17px;
         color: #6F6E6E;
@@ -91,11 +114,53 @@
         align-items: center; 
         justify-content: center;
         padding-top: 65px;
-        padding-bottom: 48px;       
+        padding-bottom: 48px; 
+        
+        @media (max-width:$mobile-breakpoint){
+            width: 325px;
+        }
     }
     .sorter-about .fa-chevron-down {
         padding-left: 9px;
     }
+    .sorter-price-product {
+    display: block;
+    font-size:14px;
+    font-weight: 600;
+    line-height: 17px;
+    display: block;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 13px 16px; 
+    background-color: $white-text-color;
+
+        @media (max-width:$mobile-breakpoint){
+            padding: 0px;
+            font-size: 12px;
+
+        }
+    }
+    ::-webkit-details-marker {display: none;}
+
+    .sorter-trending-product 
+    {   display: block;
+        font-size:14px;
+        font-weight: 600;
+        line-height: 17px;
+        display: block;
+        color: black;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 13px 16px; 
+        background-color: $white-text-color;
+
+        @media (max-width:$mobile-breakpoint){
+            padding: 0px;
+            font-size: 12px;
+        }
+    }
+    ::-webkit-details-marker {display: none;}
     .button-about {
         margin-bottom: 65px;
     }
