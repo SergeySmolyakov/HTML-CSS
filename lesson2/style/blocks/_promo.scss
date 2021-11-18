@@ -9,6 +9,18 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
+        @media (max-width:$tablet-breakpoint) {
+            height: 365px;
+            background-position: 0 0;
+            background-size: contain;
+        }
+        @media (max-width:$mobile-breakpoint) {
+            background-image: none;
+            
+        }
+
+
         &-text {
             font-weight: 900;
             font-size: 48px;
@@ -16,8 +28,11 @@
             color: $black-color;
             border-left: 12px solid $main-color;
             padding-left: 16px;
-            margin: right 90px; 
+            margin: right 95px; 
             
+            @media (max-width:$tablet-breakpoint) {
+                font-size: 44px;
+                line-height: 33px;
             
             }
     
@@ -34,8 +49,19 @@
     font-size: 32px;
     line-height: 38px;    
     color: $black-color;
+
+    @media (max-width:$tablet-breakpoint) {
+        font-size: 24px;
+        line-height: 26px;
+    }
     
 }
 .text-pink {
     color: $main-color;
-}
+
+    @media (max-width:$tablet-breakpoint) {
+        font-size: 24px;
+        line-height: 26px;
+    }
+ }
+}  

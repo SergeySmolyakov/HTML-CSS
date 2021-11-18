@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 body {
     
@@ -11,8 +11,26 @@ body {
 }
 .wrap {
     margin: 0 auto;
-    width: $desktop-wrap;    
+    max-width: 1140px;
+    padding-left: 15px;   
+    padding-right: 15px;
+    
+
 }
+
+@media (max-width:$tablet-breakpoint) {
+    .wrap {
+        width:$tablet-wrap;
+    }
+}  
+@media (max-width:$mobile-breakpoint) {
+    .wrap {
+        width:$mobile-wrap;
+    }
+}  
+
+  
+    
 .main {
     flex-grow: 1;
 }
