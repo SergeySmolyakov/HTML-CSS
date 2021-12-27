@@ -1,0 +1,57 @@
+@import "_var.scss";
+@import "_mixins.scss";
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    
+    font-family: 'Lato', sans-serif;    
+}
+.wrap {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-left: 15px;   
+    padding-right: 15px;
+    
+
+}
+
+@media (max-width:$tablet-breakpoint) {
+    .wrap {
+        width:$tablet-wrap;
+    }
+}  
+@media (max-width:$mobile-breakpoint) {
+    .wrap {
+        width:$mobile-wrap;
+    }
+}  
+
+  
+    
+.main {
+    flex-grow: 1;
+}
+@import "blocks/header";
+@import "blocks/promo";
+@import"blocks/innerblock";
+@import"blocks/filterbox";
+@import "blocks/categories";
+@import "blocks/product";
+@import "blocks/features";
+@import"blocks/pagination";
+@import"blocks/feedback";
+@import"blocks/subscribe";
+@import"blocks/footer";
+@import"blocks/slider";
+.hidden {
+  width: 1px;  
+  height: 1px;
+  position: absolute;
+  left: -99999px;
+  margin: -1px;
+
+}
+

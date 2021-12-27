@@ -1,0 +1,37 @@
+.feedback {
+    background-color: #f4f4f4;
+    background-image: url("../img/subscribe_bg.png");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 95px;
+    padding-bottom: 153px;
+    &-wrap {
+        display: flex;  
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @media (max-width:$tablet-breakpoint){
+          display: block;
+          margin: 0 auto;
+        }
+        
+      }
+
+}
+.reviews {
+  width: 360px;
+  text-align: center;
+
+  @media (max-width:$tablet-breakpoint){
+    width: auto;
+    padding-bottom: 48px;
+  }
+
+  &-name {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: $black-color;
+      padding-top: 45px;
+  }
+}
